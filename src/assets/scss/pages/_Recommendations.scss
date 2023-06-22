@@ -1,0 +1,88 @@
+.recommendation__card {
+    background-color: $container-color;
+    padding: 1.25rem 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+
+    .recommendation__img {
+        width: 60px;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .recommendation__name {
+        font-size: $normal-font-size;
+        font-weight: $font-medium;
+    }
+    
+    .recommendation__job-title {
+        font-size: $tiny-font-size;
+        margin-bottom: 1.25rem;
+    }
+
+    .recommendation__description {
+        font-size: $small-font-size;
+        margin-top: .75rem;
+        overflow: hidden;
+        // width:100px;
+        display: -webkit-box;
+        -webkit-line-clamp:7;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .recommendations__container {
+        width: 750px;
+    }
+
+    .recommendation__card {
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+.recommendation__details-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    
+    .recommendation__details-top {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+    }
+    
+    .recommendation__details-img {
+        max-width: 100px;
+        border-radius: 3rem;
+    }
+
+    .recommendation__details-title {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    @media screen and (max-width: 320px)  {
+        .recommendation__details-img {
+            max-width: 70px;
+            border-radius: 3rem;
+        }
+
+        .recommendation__details-title {
+            font-size: $smaller-font-size;
+        }
+
+    }
+}
+
+
+.swiper-pagination-bullet {
+    background-color: $text-color-light;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $first-color;
+}

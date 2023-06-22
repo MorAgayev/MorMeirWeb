@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $body-color;
+    z-index: $z-fixed;
+
+    .nav {
+        height: $header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__logo {
+            color: $first-color;
+            font-weight: $font-medium;
+            transition: .4s;
+            
+            &:hover {
+                color: $first-color-alt;
+            }   
+        }
+
+        .nav__menu {
+            position: fixed;
+            bottom: 1rem;
+            background-color: hsla($second-hue, 32%, 16%, .8);
+            width: 90%;
+            border-radius: 4rem;
+            padding: 1rem 2.25rem;
+            backdrop-filter: blur(10px);
+        }
+
+        @media screen and (max-width: 320px) {
+            .nav__menu {
+                padding: 1rem 1.5rem;
+            }
+        }
+
+        @media screen and (min-width: 576px) {
+            .nav__menu {
+                width: 328px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+        .nav__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav__link {
+            color: $text-color;
+            font-size: 1.25rem;
+            padding: .4rem;
+            display: flex;
+            border-radius: 5rem;
+
+            &.active-link {
+                background: linear-gradient(180deg, 
+                            hsla($first-hue, $sat, $lig, 1),
+                            hsla($first-hue, $sat, $lig, 2)
+                            );
+                box-shadow: 0 0 16px hsla($first-hue, $sat, $lig, .4);
+            }
+        }
+    }
+
+    .change__theme {
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: $first-color;
+        }
+    }
+}
+
+
+// CHANGE BACKGROUND
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}

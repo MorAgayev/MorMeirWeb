@@ -1,0 +1,20 @@
+//BASE
+@import './base/typography';
+@import './base/variables';
+@import './base/base';
+@import './base/helpers';
+
+
+//PAGES
+@import './pages/HeroSection';
+@import './pages/AboutSection';
+@import './pages/SkillsSection';
+@import './pages/FeaturedProjects';
+@import './pages/Recommendations';
+@import './pages/Contact';
+
+//COMPONENTS
+@import './components/AppHeader';
+@import './components/AppFooter';
+@import './components/MainModal';
+@import './components/ProjectDetails';

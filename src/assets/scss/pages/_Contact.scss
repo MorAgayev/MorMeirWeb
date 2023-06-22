@@ -1,0 +1,142 @@
+.contact__container {
+    row-gap: 3rem;
+    padding-bottom: 3rem;
+
+    .contact__title {
+        text-align: center;
+        font-size: $h3-font-size;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__info {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .contact__content {
+        height: 100%;
+    }
+
+    .contact__card {
+       background-color: $container-color; 
+       padding: 1rem;
+       border-radius: .75rem;
+       text-align: center;
+
+       .contact__card-icon {
+            font-size: 2rem;
+            color: $title-color;
+            margin-bottom: .25rem;
+       }
+
+       .contact__card-title,
+       .contact__card-data {
+        font-size: $small-font-size;
+       }
+
+       .contact__card-title {
+        font-weight: $font-medium;
+       }
+
+       .contact__card-data {
+        display: block;
+        margin-bottom: .75rem;
+       }
+
+       .contact__button {
+            color: $first-color;
+            font-size: $small-font-size;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: .25rem;
+       }
+
+       .contact__button:hover .contact__button-icon {
+        transform: translateX(.25rem);
+
+       }
+
+       .contact__button-icon {
+        font-size: 1rem;
+        transition: .4s;
+       }
+    }
+
+    .contact__form-div {
+        position: relative;
+        margin-bottom: 2rem;
+        height: 2rem;
+        
+        .contact__form-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $text-color-light;
+            background: none;
+            color: $text-color;
+            outline: none;
+            padding: 1.5rem;
+            border-radius: .75rem;
+            z-index: 1;
+        }
+
+        .contact__form-tag {
+            position: absolute;
+            top: -.75rem;
+            left: 1.25rem;
+            font-size: $smaller-font-size;
+            padding: .25rem;
+            background-color: $body-color;
+            z-index: 10;
+        }
+
+        .contact__form-area {
+            height: 11rem;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    .contact__form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .contact__form-inputs {
+            height: 100%;
+            position: relative;
+        }
+
+        .button {
+            align-self: start;
+        }
+    }
+
+    @media screen and (min-width: 576px) {
+        .contact__info {
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    .contact__container {
+        // FOR TWO COLUMN (FORM AND CARDS)
+        // grid-template-columns: repeat(2, max-content);
+        // justify-content: center;
+        // column-gap: 3rem;
+
+
+        .contact__info {
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+}
