@@ -1,9 +1,9 @@
 {
+  "homepage": "http://moragayev.github.io/MorMeirWeb",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://moragayev.github.io/MorMeirWeb/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
