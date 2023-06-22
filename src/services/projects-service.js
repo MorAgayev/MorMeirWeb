@@ -5,7 +5,7 @@ export const projects = [
         developmentIn: 'Final project - Coding Academy',
         description: 'As part of my studies at an academic coding bootcamp, I collaborated with two team members to develop the Quello project. Qwello is web-based task management inspired by Trello, encompassing both the UI and functionality. We completed the project within a two-week sprint, dedicating over 130 working hours to developing the frontend, backend, and connecting it to the database.',
         images: [
-            'images/quello.jpeg'
+            'img/quello.jpeg'
         ],
         githubLink: 'https://github.com/MorAgayev/Quello/',
         webLink: '',
@@ -17,7 +17,7 @@ export const projects = [
         developmentIn: 'Coding Academy - First Project',
         description: 'As part of an academic coding bootcamp, I developed the Minesweeper game for my first project. This game incorporates complex logic required for game development.',
         images: [
-            'images/minesweeper.png'
+            'img/minesweeper.png'
         ],
         githubLink: 'https://github.com/MorAgayev/MineSweeper',
         webLink: 'https://moragayev.github.io/MineSweeper/',
@@ -29,7 +29,7 @@ export const projects = [
         developmentIn: 'Coding Academy',
         description: 'I collaborated with a team member to build an application that combines a notes application and email functionality. This integration allows users to send a note as an email and save an email as a note.',
         images: [
-            'images/appsus1.png'
+            'img/appsus1.png'
         ],
         githubLink: 'https://github.com/MorAgayev/AppSus',
         webLink: 'https://moragayev.github.io/AppSus/#/',
