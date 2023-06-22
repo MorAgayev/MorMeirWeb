@@ -4,6 +4,7 @@ import { IconContext } from "react-icons";
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import {BsMouse} from 'react-icons/bs'
 import scrollReveal from "scrollreveal";
+
 export function HeroSection() {
     
     useEffect(()=> {
@@ -12,7 +13,6 @@ export function HeroSection() {
             distance: '60px',
             duration: 2500,
             delay: 400,
-            // reset:true,
           })
           
           st.reveal('.home__data') 
@@ -20,16 +20,15 @@ export function HeroSection() {
           st.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'}) 
     }, [])
 
-    return (
-        <section className="home section" id="home">
-           <div className="home__container container grid">
+    return <section className="home section" id="home">
+            <div className="home__container container grid">
                 <div className="home__data">
                     <span className="home__greeting">Hello, I'm </span>
                     <h1 className="home__name">Mor Meir</h1>
                     <h3 className="home__education">Fullstack Developer</h3>
 
                     <div className="home__buttons">
-                        <a download="" href="assets/pdf/Mor-Meir-Fullstack-CV.pdf" className="button button--ghost">
+                        <a download="" href="pdf/Mor-Meir-Fullstack-CV.pdf" className="button button--ghost">
                             Download CV
                         </a>
                         <a href="#about" className="button">About me</a>
@@ -55,8 +54,6 @@ export function HeroSection() {
                     </IconContext.Provider>
                     <span className="home__scroll-name">Scroll Down</span>
                 </a>
-           </div>
-        </section>
-            
-    )
+           </div>    
+    </section>
 }
