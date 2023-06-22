@@ -34,7 +34,7 @@ export const projects = [
         githubLink: 'https://github.com/MorAgayev/AppSus',
         webLink: 'https://moragayev.github.io/AppSus/#/',
         tools: ['JavaScript', 'HTML', 'CSS']
-    },
+    }
 ]
 
 export const recommendations = [
@@ -68,5 +68,9 @@ export function getProjects() {
 }
 
 export function getRecommendations() {
+    return recommendations
+}
+
+export function getFavoriteLearningAssets() {
     return recommendations
 }
