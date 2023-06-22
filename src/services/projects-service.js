@@ -70,7 +70,3 @@ export function getProjects() {
 export function getRecommendations() {
     return recommendations
 }
-
-export function getFavoriteLearningAssets() {
-    return recommendations
-}
