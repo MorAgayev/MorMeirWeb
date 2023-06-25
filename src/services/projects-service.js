@@ -60,6 +60,14 @@ export const recommendations = [
         img: 'img/shani-pelzig.jpeg'
         
     },
+    {
+        id: 'r4',
+        name: 'Tal Zach',
+        title: 'Software Engineer at Brew',
+        description: 'Worked closely with Mor for a while, and I can say she is one of the best developers I\'ve come across with. She is an exceptionally fast learner, brings her heart and soul to every task she\'s given, and is a pleasure to work with. Mor is always up for learning new things, and she excels them very quickly. I highly recommend Mor, and I know every team will be fortunate to have her.',
+        img: 'img/tal-zach.jpeg'
+        
+    },
 ]
 
 
